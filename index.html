@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Layout Master</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Layout</title>
+	<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  
-  <nav class="zone green sticky">
-	<ul class="main-nav">
-		<li>Home</li>
-		<li>About us</li>
-		<li>Contact</li>
-		<li class="push">Portfolio</li>
-	</ul>
-  </nav>
-  
-  <div class="zone red container">Slider</div>
-  
-  
-  <div class="zone blue grid-wrapper">
-		
-		<div class="box zone"> <img src="./img1.png"> </div>
-		<div class="box zone"> <img src="./img1.png"> </div>
-		<div class="box zone"> <img src="./img1.png"> </div>
-		<div class="box zone"> <img src="./img1.png"> </div>
-		<div class="box zone"> <img src="./img1.png"> </div>
-		<div class="box zone"> <img src="./img1.png"> </div>
-		
-  
-  </div>
-  
-  
-  <footer class="zone yellow">Footer</footer>
+
+	<nav class="part navi sticky" > 
+		<ul class="bar">
+			<li><a href="index.html">Home</a> </li>
+			<li><a href="">About Us</a></li>
+			<li class="push" ><a href="">Contact Us</a></li>
+		</ul>
+	 </nav>
+<div class="ism-slider" id="my-slider">
+  <ol>
+    <li>
+      <img src="ism/image/slides/_u/1554214399632_308044.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1554214373307_318778.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+    <li>
+      <img src="ism/image/slides/_u/1554214634406_135485.jpg">
+      <div class="ism-caption ism-caption-0"></div>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+		<div class="part portfolio grid" >
+		<div class="box"><img src="p1.jpg"></div>
+		<div class="box"><img src="p2.jpg"></div>
+		<div class="box"><img src="p3.jpg"></div>
+		<div class="box"><img src="p4.jpg"></div>
+		<div class="box"><img src="p5.jpg"></div>
+		<div class="box"><img src="p6.jpg"></div>
+	</div>
+
+	<footer class="part footer">
+	<p>Design & Developed by <b>Hassam Ahtesham</b></p>
+
+
+	</footer>
 </body>
 </html>

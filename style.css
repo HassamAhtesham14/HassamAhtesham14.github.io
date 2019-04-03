@@ -1,84 +1,102 @@
-body{
-	margin: 0px;
+.part{
+
+	cursor: pointer;
+
+	color:green;
+	font-size: 2em;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	transition: all 0.3s linear;
 }
 
-.zone {
-    /*padding:30px 50px;
-    margin:40px 60px;*/
-    cursor:pointer;
-    
-    color:#fff;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
-}
+.part:hover{
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-.green{
-    background: #669999;
-    }
-.red{
-    background: #C655BE;
-    }
-.yellow{
-    background: #F3AAAA;
-    }
+.navi{
+	background-color: #669999;
+}
 
-.blue{
-    background: #7abcff;     }
+.slider {
+	background-color: #C655BE;
+}
 
-	.sticky{
-		position: sticky;
-		top: 0px;
-	}
-	
-.main-nav{
+.portfolio{
+	background-color: #F3AAAA;
+}
+
+.footer{
+	background-color: #7abcff;
+}
+
+.bar{
 	display: flex;
+	font-size: 0.9em;
+	margin: 0;
+	color: black;
 	list-style: none;
-	font-size: 0.7em;
-	margin: 0px;
+	height: 8vh;
 }
 
-.main-nav li{
-	padding: 20px;
+a{
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
 }
-
-
 .push{
 	margin-left: auto;
+	padding-right: 20px;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
 }
 
-@media only screen and (max-width: 600px){
-	.main-nav{
-		font-size: 0.5em;
-	}
+@media only screen and(max-width: 600px){
+
+    .bar{
+
+        font-size: 0.5em;
+        padding:0;
+    }
 }
-
-/*slider*/
-
 
 .container{
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 50vh;
+	height: 50vh;
+
 }
 
-.grid-wrapper{
+.grid{
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
 }
 
-.box > img{
-	width: 50%;
-	margin: auto;
-	display: block;
+.box{
+	background-color: #444;
+    padding:0px;
+    margin:20px;
+}
+
+.box >img{
+    width:100%;
+    height: 100%;
+}
+.footer{
+    font-size:0.9em;
+    color: black;
+    text-align: center;;
+}
+.ism-slider{
+	margin-top: 3.95%;
 }
